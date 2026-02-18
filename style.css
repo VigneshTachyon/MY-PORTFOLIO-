@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.4s;
+}
+
+/* Navbar */
+.navbar {
+  background: #111;
+}
+
+.nav-link {
+  color: white !important;
+  margin-left: 15px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Gradient Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(-50deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.section {
+  padding: 100px 0;
+}
+
+/* Cards */
+.card-custom {
+  padding: 30px;
+  border-radius: 20px;
+  background: #222;
+  color: white;
+  transition: 0.4s;
+}
+
+
+
+.card-custom:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+.card-custom a:hover {
+    background-color: darkturquoise;
+    border:2px solid white;
+    border-radius: 10px;
+    width: 200px;
+
+}
+.code {
+  color: greenyellow;
+}
+
+
+.border-animate {
+  position: relative;
+  border-radius: 15px;
+  padding: 40px;
+  background: #111;   /* Card background */
+  color: white;
+}
+
+/* Animated border only */
+.border-animate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px; /* Border thickness */
+  border-radius: 15px;
+  background: linear-gradient(90deg, #00ffff, #ff00cc, #00ff88, #00ffff);
+  background-size: 300%;
+  animation: borderMove 4s linear infinite;
+
+  /* Important part */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+@keyframes borderMove {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+.left {
+  background: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 600px;
+}
+.right {
+  background: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 700px;
+}
+
+
+
+/* Light Mode */
+.light-mode {
+  background: white;
+  color: black !important;
+}
+
+.light-mode .navbar  {
+  background: #f8f9fa;
+}
+
+.light-mode .nav-link {
+  color: black !important;
+}
+.light-mode footer.home {
+  background-color: white;
+  color:black;
+  border:2px solid black;
+}
+
+.light-mode .card-custom {
+  background: #f5f5f5;
+  color: black;
+  background-color: white;
+}
+.light-mode .card-custom a{
+  background: black;
+  color: white;
+  
+}
+
+.light-mode .card-custom.skills {
+  background: #f5f5f5;
+  color: black;
+  background-color: white;
+  border:2px solid blue;
+}
+.light-mode .card-custom.con {
+  background-color:gold;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;  
+ 
+}
+.light-mode span.code {
+  color: black;
+}
+.light-mode footer {
+  background-color: white;
+  color:black;
+  border:2px solid black;
+}
+.light-mode .border-animate {
+  background: white;
+  color: black;
+}
+
+.light-mode .form-floating input {
+  background: lightseagreen;
+  color: black;
+}
+.light-mode button {
+  background: black;
+  color: white;
+  border: none;
+}
+.light-mode .bordered {
+  background: lightskyblue;
+  color: black;
+}

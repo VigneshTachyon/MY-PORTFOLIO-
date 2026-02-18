@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skills</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.gradient-link {
+  font-size: 24px;
+  text-decoration: none;
+  background: linear-gradient(90deg, red, blue, green);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+
+
+
+.card-custom {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.card-custom::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #00ffff, #ff00cc, #00ff88, #00ffff);
+  background-size: 300%;
+  animation: moveBorder 4s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveBorder {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand text-white gradient-link" href="index.html">MY PORTFOLIO</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item">
+<button id="modeToggle" class="btn btn-primary btn-sm ms-3">🌙</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="section">
+<div class="container text-center">
+    
+<h2 class="text-center text-dark mb-4">My Skills</h2>
+
+<div class="border border-danger p-4 mb-5 rounded">
+
+  <div class="text-warning fs-4 fw-bold text-decoration-underline mb-4 text-start">
+    FRONTEND SKILLS:
+  </div>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card-custom skills">HTML</div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom skills">CSS</div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom skills">JavaScript</div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom skills">Bootstrap</div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom skills">React</div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom skills">jQuery</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="text-warning fs-4 fw-bold text-decoration-underline mt-5 text-start">
+  BACKEND SKILLS:
+</div>
+
+<div class="row g-4 m-4">
+
+  <div class="col-md-4">
+    <div class="card-custom skills">PHP</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card-custom skills">MySQL</div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card-custom skills">Node.js</div>
+  </div>
+
+</div>
+
+
+</div>
+
+
+
+
+</section>
+
+
+<footer class="mb-0">© 2026 TACHYON_VIGNESH</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
