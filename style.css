@@ -34,7 +34,7 @@ body {
 /* Gradient Hero */
 .hero {
   height: 100vh;
-  background: linear-gradient(-50deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+ background: linear-gradient(-45deg, #000000, #1f1c2c, #928dab, #2b5876);
 
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
@@ -204,3 +204,4 @@ footer {
   color: black;
 
 }
+
