@@ -178,6 +178,7 @@ footer {
 }
 .light-mode span.code {
   color: black;
+  -webkit-text-stroke: 1px red;
 }
 .light-mode footer {
   background-color: white;
@@ -201,4 +202,5 @@ footer {
 .light-mode .bordered {
   background: lightskyblue;
   color: black;
+
 }
