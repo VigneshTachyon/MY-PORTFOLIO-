@@ -3,7 +3,7 @@ if (document.getElementById("typing")) {
 
 const text = [
   {word: "Aspiring Embedded Engineer", color: "#00ffff"},
-  {word: "IoT Enthusiast", color: "#ff00ff"},
+  {word: "IoT Enthusiast", color: "blue"},
   {word: "< / > ", color: "#00ff88"}
 ];
 
@@ -47,5 +47,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   }
 });
+
 
 
